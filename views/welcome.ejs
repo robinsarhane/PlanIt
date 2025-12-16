@@ -1,0 +1,81 @@
+<%- include("partials/header.ejs", { showAuthButtons: true, historyButton: false })%>
+
+<div id="page-intro" style="position: static; min-height: 450px; width:100vw;">
+    <h1>Welcome to PlanIt!</h1>
+</div>
+
+<%if(locals.message){%>
+    <h2><%=message%></h2>
+<%}%>
+
+<div class="whyChooseUs">
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom text-center">Why choose PlanIt?</h2>
+    <div class="row g-5 py-5 row-cols-1 row-cols-lg-3 scroll-reveal">
+      <div class="feature col time-saving">
+        <img class="icons" src="/Images/clock.jpg" height="35">
+        <h5 class="fs-2 text-body-emphasis" style="padding-top: 10px">Time-Saving & Efficiency</h5>
+        <p>Instead of manually trying different course combinations, students instantly get all possible schedules, saving them hours of work.</p>
+      </div>
+      <div class="feature col flexibility">
+        <img class="icons" src="/Images/notebook.jpg" height="35">
+        <h5 class="fs-2 text-body-emphasis" style="padding-top: 10px">Flexibility & Customization</h5>
+        <p>Students can easily compare different schedules to find the best one based on preferred time slots, gaps between classes, or personal commitments.</p>
+      </div>
+      <div class="feature col conflict-free">
+        <img class="icons" src="/Images/schedule.jpg" height="35">
+        <h5 class="fs-2 text-body-emphasis" style="padding-top: 10px">Conflict-Free Scheduling</h5>
+        <p>The system ensures that all generated schedules avoid time conflicts, helping students register without worrying about overlapping classes.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="how-it-works">
+  <div class="work">
+    <h2>How does it work?</h2>
+    <div class="work-cards">
+      <div class="work-card-container">
+        <div class="number-circle">1</div>
+        <div class="work-card">
+          <h5>Select Your Courses</h5>
+          <p>Begin by choosing the courses you want to take for the upcoming semester.</p>
+        </div>
+      </div>
+
+      <div class="work-card-container">
+        <div class="number-circle">2</div>
+        <div class="work-card">
+          <h5>Generate Possible Schedules</h5>
+          <p>The website will automatically calculate all possible combinations of schedules based on the available courses.</p>
+        </div>
+      </div>
+
+      <div class="work-card-container">
+        <div class="number-circle">3</div>
+        <div class="work-card">
+          <h5>Choose Your Ideal Schedule</h5>
+          <p>Once you find the schedule that works best for you, select it to finalize your semester plan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, {
+  threshold: 0.1
+});
+
+document.querySelectorAll('.work-card, .scroll-reveal').forEach(el => {
+  observer.observe(el);
+});
+</script>
+
+<%- include("partials/footer.ejs")%>

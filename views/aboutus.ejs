@@ -1,0 +1,83 @@
+<%- include("partials/header.ejs")%>
+
+<form action="/aboutus" id="aboutUsForm" method="POST">
+<section class="about-us">
+  <h2 id="typing-creators-title">|</h2>
+    <div class="creators">
+      <div class="creator">
+        <img src="/Images/anthony.png" alt="Creator 1">
+        <p class="name">Anthony Abdallah</p>
+        <p class="description">Handled the server-side logic, API integrations, and ensured everything runs smoothly behind the scenes.</p>
+      </div>
+      <div class="creator">
+        <img src="/Images/romy.png" alt="Creator 2">
+        <p class="name">Romy Matar</p>
+        <p class="description">Designed and developed the user interface, making sure the website is interactive, accessible, and visually appealing.</p>
+      </div>
+      <div class="creator">
+        <img src="/Images/robin.png" alt="Creator 3">
+        <p class="name">Robin Sarhane</p>
+        <p class="description">Built and managed the database structure, ensuring data is organized, secure, and efficiently connected to the application.</p>
+      </div>
+    </div>
+  </section>
+
+    <section class="what-we-do-section">
+      <h2 class="section-title" id="typing-title">|</h2>
+      <div class="what-we-do">
+        <div class="do-box">
+          <h4>Smart Scheduling</h4>
+          <p>We built an engine that thinks for you—generating all valid schedule combinations instantly.</p>
+        </div>
+        <div class="do-box">
+          <h4>Student-Centric Design</h4>
+          <p>Every button, every animation, every page is designed to make your life easier and your planning fun.</p>
+        </div>
+        <div class="do-box">
+          <h4>Built by Students, for Students</h4>
+          <p>We know the struggle. That's why we made Plan It—to save time, reduce stress, and make registration a breeze.</p>
+        </div>
+      </div>
+    </section>
+</form>
+
+<script>
+  function startTypingEffect(element, text, speed = 150) {
+    let i = 0;
+    function typeChar() {
+      if (i < text.length) {
+        element.innerHTML = text.slice(0, i + 1) + "|";
+        i++;
+        setTimeout(typeChar, speed);
+      } else {
+        element.innerHTML = text;
+      }
+    }
+    typeChar();
+  }
+
+  const typingTitle1 = document.getElementById("typing-title"); // What We Do
+  const typingTitle2 = document.getElementById("typing-creators-title"); // Meet the Creators!
+
+  let typed1 = false;
+  let typed2 = false;
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.target === typingTitle1 && entry.isIntersecting && !typed1) {
+        startTypingEffect(typingTitle1, "What We Do.", 150);
+        typed1 = true;
+      }
+      if (entry.target === typingTitle2 && entry.isIntersecting && !typed2) {
+        startTypingEffect(typingTitle2, "Meet the Creators!", 150);
+        typed2 = true;
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(typingTitle1);
+  observer.observe(typingTitle2);
+</script>
+
+
+<%- include("partials/footer.ejs")%>

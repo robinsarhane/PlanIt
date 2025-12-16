@@ -1,0 +1,126 @@
+<%- include("partials/header.ejs")%>
+
+<div class="calendar-wrapper">
+  <h2 class="calendar-title">View your schedule below.</h2>
+  <div class="calendar-container">
+    <div class="header">
+      <ul class="weekdays">
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+      </ul>
+    </div>
+
+    <div class="timeslots-container">
+      <ul class="timeslots">
+        <li>7:00</li>
+        <li>8:00</li>
+        <li>9:00</li>
+        <li>10:00</li>
+        <li>11:00</li>
+        <li>12:00</li>
+        <li>13:00</li>
+        <li>14:00</li>
+        <li>15:00</li>
+        <li>16:00</li>
+        <li>17:00</li>
+        <li>18:00</li>
+        <li>19:00</li>
+        <li>20:00</li>
+        <li>21:00</li>
+        <li>22:00</li>
+      </ul>
+    </div>
+
+    <div class="event-container"></div>
+  </div>
+
+  <div class="course-info-box" style="display: none;">
+    <h3 class="course-info-title">Course Details</h3>
+    <p class="course-info-content"></p>
+  </div>
+</div>
+
+<script>
+  const chosenSections = <%- JSON.stringify(chosenSections) %>;
+
+  const eventContainer = document.querySelector(".event-container");
+  const courseInfoBox = document.querySelector(".course-info-box");
+  const courseInfoContent = courseInfoBox.querySelector(".course-info-content");
+
+  const colors = [
+    "#9e0142", "#d53e4f", "#f46d43", "#fdae61", "#467fa4", "#de786a", "#9cc896",
+    "#65c2a5", "#32888d", "#5e4fa2"
+  ];
+
+  const dayMap = { M: 1, T: 2, W: 3, R: 4, F: 5, S: 6 };
+
+  chosenSections.forEach((section, index) => {
+    for (let i = 0; i < section.days.length; i++) {
+      const dayChar = section.days.charAt(i);
+      const column = dayMap[dayChar];
+
+      const slot = document.createElement("div");
+      slot.classList.add("slot");
+
+      slot.style.gridColumn = `${column}`;
+
+      const [hour, minute] = section.startingTime.split(":").map(Number);
+
+      const startTimeInMinutes = (hour - 7) * 60 + minute;
+      
+      const startRow = Math.floor(startTimeInMinutes / 15) + 1;
+
+      // const durationInMin = section.duration;
+      // const rowSpan = Math.floor(durationInMin / 15);
+
+      // slot.style.gridRow = `${startRow}`;
+      // slot.style.gridRowEnd = `span ${rowSpan}`;
+
+      const durationInMin = section.duration;
+      const height = durationInMin * 0.8333;
+
+      slot.style.height = `${height}px`;
+      slot.style.gridRow = `${startRow}`;
+
+      const colorIndex = index % colors.length;
+      slot.style.backgroundColor = colors[colorIndex];
+
+      const endTimeInMinutes = startTimeInMinutes + durationInMin;
+      const endHour = Math.floor(endTimeInMinutes / 60) + 7;
+      const endMinute = endTimeInMinutes % 60;
+      const endTime = `${String(endHour).padStart(2, "0")}:${String(endMinute).padStart(2, "0")}`;
+
+      slot.innerHTML = ` 
+        <div class="event-name">${section.subject}</div>
+        <div class="event-info">${section.startingTime} - ${endTime}</div>
+      `;
+
+      slot.addEventListener("click", () => {
+        courseInfoBox.style.display = "block";
+        courseInfoContent.innerHTML = `
+          <strong>Subject:</strong> ${section.subject}<br>
+          <strong>Course Name:</strong> ${section.coursename}<br>
+          <strong>Section:</strong> ${section.section}<br>
+          <strong>Time:</strong> ${section.startingTime} - ${endTime}<br>
+          <strong>Location:</strong> ${section.location}<br>
+          <strong>Instructor:</strong> ${section.instructor}<br>
+          <strong>Days:</strong> ${section.days}<br>
+          <strong>Duration:</strong> ${section.duration} minutes
+        `;
+
+        courseInfoBox.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      });
+
+      eventContainer.appendChild(slot);
+    }
+  });
+</script>
+
+<%- include("partials/footer.ejs")%>

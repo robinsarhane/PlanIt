@@ -1,0 +1,39 @@
+<%- include("partials/header.ejs")%>
+
+<%if(locals.message){%>
+    <h2 class="page-instruction" style="margin-top: 5rem;"><%=message%></h2>
+
+    <form action="/subjects" method="POST">
+        <input type="hidden" name="path" value="1">
+        <div class="button-container">
+          <input type="submit" name="SUB_BTN" id="featuresSubmitBtn" value="Get Started">
+        </div>    
+    </form>  
+<%} else {%>
+    <div class="big-history">
+        <h2 class="page-instruction">Your saved schedules are listed below. View or remove them as needed.</h2>
+        
+        <ul class="history-display">
+            <% for(var i = 0; i < history.length; i++) {%>
+                <li class="history-item">
+                    <div class="history-container">
+                        <span class="history-title"><%= history[i].schedule_name%></span>
+                        <div class="history-buttons">
+                            <form action="/view" method="get">
+                                <input type="hidden" name="name" value="<%= history[i].schedule_name%>">
+                                <input class="view viewbtn" type="submit" value="View">
+                            </form>
+                            <form action="/remove" method="get">
+                                <input type="hidden" name="name" value="<%= history[i].schedule_name%>">
+                                <input class="remove removebtn" type="submit" value="Remove">
+                            </form>
+                        </div>
+                    </div>
+                    
+                </li>
+            <% }%>  
+        </ul>
+        </div>
+<%}%>
+
+<%- include("partials/footer.ejs")%>

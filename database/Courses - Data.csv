@@ -1,0 +1,747 @@
+﻿course_id,subject,course_num,course_name,credits
+ACC 203,ACC,203,Financial Accounting,3
+ACC 204,ACC,204,Managerial Accounting,3
+ACC 302,ACC,302,Cost Accounting,3
+ACC 311,ACC,311,Intermediate Accounting I,3
+ACC 312,ACC,312,Intermediate Accounting II,3
+ACC 401,ACC,401,Advanced Accounting,3
+ACC 412,ACC,412,External Auditing,3
+ACC 420,ACC,420,Information Technology Audit,3
+ACC 431,ACC,431,Financial Statements Analysis,3
+ACC 821,ACC,821,Financial Accounting,3
+ARA 101,ARA,101,Arabic Essay Read. & Writ. I,3
+ARA 305,ARA,305,Arabic Philology &Lexicography,3
+ARA 313,ARA,313,Creative Writing,3
+ARA 323,ARA,323,Abbasid Poetry,3
+ARA 325,ARA,325,Classical Prose,3
+ARA 328,ARA,328,Arabic Folk Literature,3
+ARA 341,ARA,341,Modern Arab. Nov.&Short Story,3
+ARA 342,ARA,342,Arabic Drama,3
+ARA 343,ARA,343,Modern Arabic Poetry,3
+ARA 344,ARA,344,Trends in Modern Literature,3
+ARCH 311,ARCH,311,Structural Concept,3
+ARCH 331,ARCH,331,Design Studio III,6
+ARCH 351,ARCH,351,Digital Drawing,3
+ARCH 361,ARCH,361,Theory I,2
+ARCH 371,ARCH,371,History of Architecture I,3
+ARCH 421,ARCH,421,Materials & Method of Constr.,3
+ARCH 422,ARCH,422,Climate & Energy,3
+ARCH 431,ARCH,431,Design Studio V,6
+ARCH 441,ARCH,441,Regional Architecture,3
+ARCH 461,ARCH,461,Contemporary Trends,2
+ARCH 463,ARCH,463,Landscape Architecture,2
+ARCH 531,ARCH,531,Design Studio VII,6
+ARCH 541,ARCH,541,Urban Planning I,3
+ARCH 581,ARCH,581,Professional Practice I,3
+ARCH 631,ARCH,631,Final Project Research,3
+ARCH 580L,ARCH,580L,Tp:Dynamic 3D Modeling,3
+ARCH 580O,ARCH,580O,Topics: Public Art in Cities,3
+ARCH 580T,ARCH,580T,Topics: Sustainable Architecture Lab,3
+ARCH 580U,ARCH,580U,Topics: Urban Wooden Furniture Design & Construction,3
+ART 102,ART,102,Art Appreciation,3
+ART 211,ART,211,Ceramics,3
+ART 212,ART,212,Ceramics Wheel Throwing,3
+ART 301,ART,301,Speculative Drawing,3
+ART 331,ART,331,History of Art I,3
+ART 332,ART,332,History of Art II,3
+ART 334,ART,334,Printmaking,3
+ART 341,ART,341,Painting I,3
+ART 351,ART,351,Sculpture I,3
+ART 352,ART,352,Sculpture II,3
+ART 365,ART,365,Studio III,4
+ART 431,ART,431,Modern Art,3
+ART 441,ART,441,Painting III,3
+AST 200,AST,200,Introduction to Astronomy,3
+BCH 300,BCH,300,Essentials of Biochemistry,3
+BCH 301,BCH,301,Introduction to Biochemistry,4
+BDA 211,BDA,211,Int. To Applied Data Analytics,3
+BDA 311,BDA,311,Data Driven Design Thinking,3
+BDA 401,BDA,401,Methodologies and Model Building in Data Analytics,3
+BDA 825,BDA,825,AI for Managers,3
+BDA 398A,BDA,398A,Topics: Cognitive Analytics,3
+BDA 398B,BDA,398B,Topics: Artificial Intelligence for Business,3
+BIF 205,BIF,205,Biostatistics,3
+BIF 243,BIF,243,Intr. to Object Oriented Prog.,3
+BIF 245,BIF,245,Objects and Data Abstraction,3
+BIF 310,BIF,310,Algorithms and Data Structures,3
+BIF 345,BIF,345,Cell & Molecular Biology,3
+BIF 375,BIF,375,Database Management Systems,3
+BIF 513,BIF,513,Computational Biology,3
+BIF 524,BIF,524,Data Mining,3
+BIF 498HC,BIF,498HC,Top:Tum Mrk&Targ.CancerTher,3
+BIF 498HE,BIF,498HE,Tp: Data visualization,3
+BIF 498HI,BIF,498HI,Tp: Developmental Biology,3
+BIO 101,BIO,101,Introd. to Biological Sci.,4
+BIO 101 L,BIO,101,Introd. to Biological Sci. Lab,0
+BIO 200,BIO,200,Basic Biology,3
+BIO 201,BIO,201,General Biology I,3
+BIO 202,BIO,202,General Biology II,3
+BIO 209,BIO,209,Basic Biology for Computer Sci,3
+BIO 311,BIO,311,Microbiology,3
+BIO 312,BIO,312,Microbiology Lab,1
+BIO 321,BIO,321,Genetics,3
+BIO 322,BIO,322,Genetics Lab,1
+BIO 343,BIO,343,Anatomy & Physiology,3
+BIO 344,BIO,344,Anatomy and Physiology Lab,1
+BIO 345,BIO,345,Cell & Molecular Biology,3
+BIO 401,BIO,401,Developmental Biology,3
+BIO 410,BIO,410,Biotechnology,3
+BIO 489,BIO,489,Seminar in Biology,1
+BIO 600,BIO,600,Graduate Seminar,0
+BIO 611,BIO,611,Molecular Biology and Genomics,3
+BIO 613,BIO,613,Cell Biology,3
+BIO 631,BIO,631,Tum. Mark. &Targ.Canc. Thera.,3
+BIO 632,BIO,632,Adv. in Epigen. & Therapeutics,3
+BIO 646,BIO,646,Microbial Pathogenesis,3
+BIO 201B,BIO,201B,General Biology I Lab,1
+BIO 202B,BIO,202B,General Biology II Lab,1
+BIO 345B,BIO,345B,Cell & Molecular Biology Lab,1
+BIO 401H,BIO,401H,Developmental Biology,3
+BIO 420H,BIO,420H,Virology & Immunology,3
+BIO 488HA,BIO,488HA,Top.Adv.in Epigenet.&Therapeut,3
+BIO 488HB,BIO,488HB,Sp.Top:Tum Mrk&Trg Can Therapy,3
+BIO 488HI,BIO,488HI,Tp: Microbial Pathogenesis,3
+BIO 488HM,BIO,488HM,Topics: Health Informatics,3
+BIO 681D,BIO,681D,Sp.Top in Health Informatics,3
+BUS 101,BUS,101,Introduction to Business,3
+BUS 105,BUS,105,Business Mathematics,3
+BUS 202,BUS,202,Business Communication,3
+BUS 213,BUS,213,Business Law and Ethics,3
+BUS 299,BUS,299,Civic Engagement Course,0
+CHE 301,CHE,301,Transport Phenomena,3
+CHE 313,CHE,313,Organic Chemistry I,3
+CHE 314,CHE,314,Organic Chemistry I Lab,1
+CHE 546,CHE,546,Corrosion Engineering,3
+CHM 101,CHM,101,General Chemistry,4
+CHM 101 L,CHM,101,General Chemistry-Lab,0
+CHM 200,CHM,200,Essentials of Chemistry,3
+CHM 201,CHM,201,Chemical Principles,3
+CHM 203,CHM,203,Qualitative Analysis,1
+CHM 204,CHM,204,Quantitative Analysis,2
+CHM 205,CHM,205,Fundamentals of Chemistry,3
+CHM 209,CHM,209,Ess.of Chem.for Computer Sci.,3
+CHM 301,CHM,301,Analytical Chemistry,3
+CHM 302,CHM,302,Instrumental Analysis,3
+CHM 310,CHM,310,Basic Organic Chemistry,3
+CHM 311,CHM,311,Organic Chemistry I,3
+CHM 312,CHM,312,Organic Chemistry II,3
+CHM 313,CHM,313,Organic Chemistry I Lab,1
+CHM 314,CHM,314,Organic Chemistry II Lab,1
+CHM 330,CHM,330,Physical Chemistry I,4
+CHM 421,CHM,421,Inorganic Chemistry I,3
+CIE 200,CIE,200,Statics,3
+CIE 302,CIE,302,Structural Analysis,3
+CIE 303,CIE,303,Structural Analysis - SOFT,1
+CIE 308,CIE,308,Construction Materials,3
+CIE 309,CIE,309,Construction Materials - LAB,1
+CIE 320,CIE,320,Fluid Mechanics,3
+CIE 321,CIE,321,Fluid Mechanics - LAB,1
+CIE 361,CIE,361,Surveying,2
+CIE 362,CIE,362,Surveying - Lab,1
+CIE 424,CIE,424,Water Distribution & Treatment,3
+CIE 425,CIE,425,Environmental Engineering-LAB,1
+CIE 434,CIE,434,The Civil Engin'g Profession,2
+CIE 436,CIE,436,Detailing for Civil Engineers,2
+CIE 444,CIE,444,Soil Mechanics,3
+CIE 445,CIE,445,Soil Mechanics - LAB,1
+CIE 465,CIE,465,Transportation Systems Engin'g,3
+CIE 466,CIE,466,Traffic Simulation - SOFT,1
+CIE 480,CIE,480,Civil Eng'g Mg't Fundamentals,3
+CIE 509,CIE,509,Concrete Foundation Structures,3
+CIE 521,CIE,521,Hydrology,3
+CIE 590,CIE,590,GIS and Remote Sensing,3
+CIE 593,CIE,593,Construction Safety,3
+CIE 709,CIE,709,Concrete Foundation Structures,3
+CIE 721,CIE,721,Hydrology,3
+CIE 788,CIE,788,GIS & Remote Sensing,3
+CIE 793,CIE,793,Construction Safety,3
+COE 201,COE,201,Computer Proficiency,1
+COE 212,COE,212,Engineering Programming,3
+COE 312,COE,312,Data Structures,3
+COE 321,COE,321,Logic Design,3
+COE 324,COE,324,Microprocessors - Lab,1
+COE 414,COE,414,Operating Systems,3
+COE 418,COE,418,Database Systems,3
+COE 423,COE,423,Computer Architecture,3
+COE 425,COE,425,Digital Systems - Lab,1
+COE 493,COE,493,Professionalism in Engineering,3
+COE 521,COE,521,Embedded Systems,3
+COE 529,COE,529,Testing for Digital Integrated Circuits,3
+COE 545,COE,545,Information Security,3
+COE 547,COE,547,Deep Learning,3
+COE 548,COE,548,Large Language Models,3
+COE 593,COE,593,COE Application,3
+COE 729,COE,729,Testing for Digital Integrated Circuits,3
+COE 745,COE,745,Information Security,3
+COE 747,COE,747,Deep Learning,3
+COE 748,COE,748,Large Language Models,3
+COM 202,COM,202,Interpersonal Communication,3
+COM 203,COM,203,Art of Public Communication,3
+COM 213,COM,213,Public Relations,3
+COM 226,COM,226,Principles of Advertising,3
+COM 260,COM,260,Advanced Public Speaking,3
+COM 312,COM,312,Media & Gender,3
+COM 316,COM,316,Political Communication,3
+COM 430,COM,430,Writing for Advertising and PR,3
+COM 203H,COM,203H,Art of Public Communication,3
+COM 488U,COM,488U,Topics: Media and Palestine,3
+CSC 201,CSC,201,Computer Applications,1
+CSC 243,CSC,243,Intr. Object Oriented Program.,3
+CSC 245,CSC,245,Objects & Data Abstraction,3
+CSC 310,CSC,310,Algorithms & Data Structures,3
+CSC 320,CSC,320,Computer Organization,3
+CSC 322,CSC,322,Computer Organization Lab,1
+CSC 326,CSC,326,Operating Systems,3
+CSC 375,CSC,375,Database Management Systems,3
+CSC 380,CSC,380,Theory of computation,3
+CSC 430,CSC,430,Computer Networks,3
+CSC 431,CSC,431,Mobile Applications,3
+CSC 433,CSC,433,Introduction to Cloud Computing,3
+CSC 435,CSC,435,Computer Security,3
+CSC 437,CSC,437,Network Security,3
+CSC 443,CSC,443,Web Programming,3
+CSC 446,CSC,446,Systems Programming,3
+CSC 447,CSC,447,Parallel Progg/Multic.&Cluster,3
+CSC 460,CSC,460,Artificial Intelligence,3
+CSC 461,CSC,461,Introduction to Machine Learning,3
+CSC 462,CSC,462,Fundamentals of Deep Learning,3
+CSC 463,CSC,463,Introduction to Data Science,3
+CSC 490,CSC,490,Software Engineering,3
+CSC 616,CSC,616,Cryptography&Data Security,3
+CSC 660,CSC,660,Art.Intellig.:Princip.&Techniq,3
+CSC 243B,CSC,243B,Introduction to Object-Oriented Programming Lab,1
+CSC 245B,CSC,245B,Objects & Data Abstraction Lab,1
+CSC 310B,CSC,310B,Algorithms & Data Struct. Lab,1
+CSC 498H,CSC,498H,Top.CSC: Data Mining,3
+CSC 498HE,CSC,498HE,Tp:Cryptography& Data Security,3
+CSC 498HQ,CSC,498HQ,Topics: Artificial Intelligence: Principles and Techniques,3
+CSC 498HR,CSC,498HR,Topics: Data Visualization,3
+CSC 688C,CSC,688C,Top.CSC:Data Visualization,3
+CST 203,CST,203,Cultural Studies III,3
+ECO 101,ECO,101,Survey of Economics,3
+ECO 201,ECO,201,Micro Economics,3
+ECO 202,ECO,202,Macro Economics,3
+ECO 304,ECO,304,Math. Methods for Economics,3
+ECO 305,ECO,305,Intermediate Microeconomics,3
+ECO 306,ECO,306,Intermediate Macroeconomics,3
+ECO 311,ECO,311,Economic Development,3
+ECO 332,ECO,332,Introductory Econometrics,4
+ECO 332 L,ECO,332,Introductory Econometrics Lab,0
+ECO 335,ECO,335,International Economics,3
+ECO 340,ECO,340,Econ. of Organizations Mgt.,3
+ECO 346,ECO,346,Found. of Political Economy,3
+ECO 420,ECO,420,Monetary Theory & Policy,3
+ECO 422,ECO,422,Public Finance,3
+ECO 811,ECO,811,Business Economics,3
+ECO 821,ECO,821,Advanced Microeconomics,3
+ECO 831,ECO,831,App.Eco. I:Cross Sec.&Pan Data,3
+ECO 833,ECO,833,Ap Eco III:Emp Str for App Mic,3
+ECO 840,ECO,840,Math.&Comp. Models in App Eco.,3
+ECO 402AH,ECO,402AH,Topics: Financial Crisis in Emerging Economies,3
+ECO 402AL,ECO,402AL,Topics: Firms Markets and Economies,3
+ECO 402HC,ECO,402HC,Topics: Applied Econometrics I: Cross Section and Panel Data,3
+ECO 880M,ECO,880M,Special Topics in Economics: Monetary Economics and Policy,3
+EDU 201,EDU,201,Fundamentals of Education,3
+EDU 203,EDU,203,Reading across the Curriculum,3
+EDU 204,EDU,204,Educational Psychology,3
+EDU 310,EDU,310,Technology For Education,3
+EDU 340,EDU,340,Language and Literacy in Early Years,3
+EDU 341,EDU,341,Mathematical Literacy for Early Years,3
+EDU 342,EDU,342,Pedagogical Cont. Knowl./Math,3
+EDU 343,EDU,343,Pedagogical Cont.Knowl/Science,3
+EDU 344,EDU,344,Pedagogical Cont.Knowl/English,3
+EDU 345,EDU,345,Pedagogical Cont.Knowl/Soc.Std,3
+EDU 348,EDU,348,Performing Arts for Children,3
+EDU 349,EDU,349,Scientific Literacy for Early Years,3
+EDU 390,EDU,390,STEAM Education,3
+EDU 420,EDU,420,Practicum 2: ECE,3
+EDU 424,EDU,424,Practium 2: Elementary,3
+EDU 500,EDU,500,Seminar in Education,3
+EDU 503,EDU,503,Curriculum and Instruction for TD,3
+EDU 504,EDU,504,Assessment and Evaluation for TD Students,3
+EDU 512,EDU,512,Teaching of English,3
+EDU 515,EDU,515,Teaching of Math ,3
+EDU 516,EDU,516,Teaching of Sciences,3
+EDU 517,EDU,517,Teaching of Psychology,3
+EDU 519,EDU,519,Teaching of Economics,3
+EDU 561,EDU,561,Dyslexia & Read. Difficulties,3
+EDU 562,EDU,562,Intro to Gifted Education,3
+EDU 564,EDU,564,Psychoeducational Assessment,3
+EDU 565,EDU,565,Practicum,3
+EDU 730,EDU,730,Curriculum Design,3
+EDU 731,EDU,731,Research Methods,3
+EDU 753,EDU,753,Sch. Effectivness&Improvement,3
+EDU 772,EDU,772,Trends &Issues in STEM Educ.,3
+ELE 300,ELE,300,Electric Circuits,3
+ELE 303,ELE,303,Electrical Circuits Lab,1
+ELE 305,ELE,305,Introd. to Electrical Engin.,3
+ELE 391,ELE,391,Math. Methods in Elect.  Eng'g,3
+ELE 413,ELE,413,Electromagnetic Waves,3
+ELE 422,ELE,422,Power Systems,3
+ELE 442,ELE,442,Control Systems,3
+ELE 443,ELE,443,Control Systems Lab,1
+ELE 493,ELE,493,Professionalism in Engineering,3
+ELE 529,ELE,529,Design&Operation Of Smart Grid,3
+ELE 535,ELE,535,Information & Coding Theory,3
+ELE 537,ELE,537,Communication Systems,3
+ELE 553,ELE,553,Reliability Eval.of Eng.Sys.,3
+ELE 557,ELE,557,Simulation ofElectron.Circuits,3
+ELE 729,ELE,729,Design&Operation Of Smart Grid,3
+ELE 735,ELE,735,Information & Coding Theory,3
+ELE 753,ELE,753,Reliability Evaluat.Eng'g Syst,3
+ELE 757,ELE,757,Simulation ofElectron.Circuits,3
+ENG 9,ENG,9,Fundamentals of Acad. English,0
+ENG 101,ENG,101,Academic English I,3
+ENG 102,ENG,102,Academic English II,3
+ENG 202,ENG,202,Advanced Academic English,3
+ENG 211,ENG,211,Literature I,3
+ENG 212,ENG,212,Literature II,3
+ENG 216,ENG,216,Introduction to Literature,3
+ENG 303,ENG,303,Literary Linguistics,3
+ENG 333,ENG,333,Fiction Writing,3
+ENG 346,ENG,346,Contemporary Culture,3
+ENG 372,ENG,372,Comparative World Literature,3
+ENG 381,ENG,381,Corpus Linguistics,3
+ENG 202H,ENG,202H,Advanced Academic English,3
+ENG 216H,ENG,216H,Introduction to Literature,3
+ENG 372H,ENG,372H,Comparative World Literature,3
+ENG 479N,ENG,479N,Topics: Arab Women Writers,3
+ENG 479O,ENG,479O,Topics: World Literature and the Environment,3
+ENV 200,ENV,200,Introduction to Environmental Science,3
+ENV 200H,ENV,200H,Introduction to Environmental Science,3
+FAS 335,FAS,335,Fashion Design I,4
+FAS 345,FAS,345,Construction I,2
+FAS 351,FAS,351,CAD for Fashion,3
+FAS 365,FAS,365,Pattern Cutting I,3
+FAS 371,FAS,371,History of Fashion,3
+FAS 385,FAS,385,Textile Design,3
+FAS 435,FAS,435,Fashion Design III,4
+FAS 445,FAS,445,Construction III,2
+FAS 465,FAS,465,Pattern Cutting III,3
+FAS 491,FAS,491,Fashion Entrepreneurship,3
+FAS 535,FAS,535,Fashion Collection I,4
+FAS 545,FAS,545,Fashion Collection I Execution,3
+FEM 301,FEM,301,Entrepren. & Small Bus. Mgt.,3
+FEM 304,FEM,304,Family Business Management,3
+FEM 312,FEM,312,Digital Entrepreneurship,3
+FEM 322,FEM,322,Entrepreneurial Marketing,3
+FEM 333,FEM,333,Venture Cap. & Entrepr. Fin.,3
+FEM 410,FEM,410,Corporate Governance,3
+FIN 301,FIN,301,Managerial Finance,3
+FIN 302,FIN,302,Financial Institut. & Markets,3
+FIN 311,FIN,311,Banking Operations,3
+FIN 322,FIN,322,Global Financial Management,3
+FIN 405,FIN,405,Investment Analysis,3
+FIN 406,FIN,406,Portfolio Management,3
+FIN 413,FIN,413,Corporate Finance,3
+FIN 421,FIN,421,Financial Derivatives,3
+FIN 861,FIN,861,Financial Management,3
+FIN 301H,FIN,301H,Managerial Finance,3
+FIN 401F,FIN,401F,Seminar: Financial Modelling,3
+FIN 401I,FIN,401I,Seminar: FinTech,3
+FIN 401J,FIN,401J,Seminar: Fin.Cris.in Emrg.Mkts,3
+FIN 401M,FIN,401M,Seminar: Finance Frontiers: Innovations in Machine Learning and Blockchain,3
+FIN 401N,FIN,401N,Seminar: Sustainable Finance,3
+FIN 880J,FIN,880J,Special Topics: Financial Crisis in Emerging Markets,3
+FND 201,FND,201,Drawing For Foundation,3
+FND 231,FND,231,Studio IA,3
+FND 232,FND,232,Studio IB,3
+FND 235,FND,235,Shop Techniques,1
+FND 251,FND,251,Digital Media,3
+FND 281,FND,281,Design Culture,3
+GER 201,GER,201,Beginning German,3
+GNE 212,GNE,212,Engineering Mechanics,3
+GNE 301,GNE,301,Professional Communication,2
+GNE 303,GNE,303,Engineering Ethics,2
+GNE 331,GNE,331,Probability & Statistics,3
+GNE 335,GNE,335,Intro to Sustainable Eng.,3
+GNE 337,GNE,337,Introduction to Virtual Reality & Computer Vision,3
+GNE 340,GNE,340,Engineering Entrepreneurship,3
+GNE 345,GNE,345,Civic Engagement for Engineers,3
+GNE 430,GNE,430,Management Consulting for Engineers,3
+GNE 798,GNE,798,Research Methods for Engineers,3
+GNE 337H,GNE,337H,Intro. To Virtual Reality,3
+GNE 345H,GNE,345H,Civic Engagement for Engineers,3
+GNE 430H,GNE,430H,Management Consulting for Engineers,3
+GRDE 310,GRDE,310,Illustration,3
+GRDE 311,GRDE,311,Illustration II,3
+GRDE 313,GRDE,313,Advertising Design,3
+GRDE 320,GRDE,320,History of Graphic Design,3
+GRDE 340,GRDE,340,Branding,3
+GRDE 365,GRDE,365,Visual Storytelling,3
+GRDE 366,GRDE,366,Character and Composition,3
+GRDE 367,GRDE,367,Principles of Animation,3
+GRDE 410,GRDE,410,Motion Design,3
+GRDE 412,GRDE,412,Package Design,3
+GRDE 421,GRDE,421,Design Research,3
+GRDE 440,GRDE,440,Interactive Media,3
+GRDE 300E,GRDE,300E,Poster Design,3
+GRDE 300F,GRDE,300F,Print Media,3
+GRDE 300G,GRDE,300G,Micro Macro Typography,3
+GRDE 400B,GRDE,400B,Sustainable Design,3
+GRDE 400G,GRDE,400G,Social Media Strategy,3
+HLT 201,HLT,201,Basic Health,1
+HOM 202,HOM,202,Hospitality & Tourism Mgt.,3
+HOM 203,HOM,203,Food & Beverage Conc. Dev.,3
+HOM 215,HOM,215,Front Office Operations,1
+HOM 217,HOM,217,Housekeeping Mgt. & Operations,1
+HOM 239,HOM,239,Business Etiquette & Protocol,1
+HOM 250,HOM,250,Food Preparation I,3
+HOM 254,HOM,254,Baking Pastry and Chocolate,3
+HOM 302,HOM,302,Hospitality Purchasing,3
+HOM 307,HOM,307,Hospitality Marketing,3
+HOM 321,HOM,321,Tourism Econ.& Cultural Impact,3
+HOM 455,HOM,455,Hospitality Revenue Management,3
+HOM 477,HOM,477,Hospitality Strategic Mgt.,3
+HOM 880B,HOM,880B,Sp.Top.HOM:Hosp/Tour Plan &Dev,3
+HRM 701,HRM,701,Strategic Human Res. Mgt.,3
+HRM 703,HRM,703,Recruitment and Selection,1
+HRM 705,HRM,705,Training and Development,1
+HRM 707,HRM,707,Adv. Organizational Behavior,3
+HRM 715,HRM,715,Job Analysis & Job Evaluation,1
+HST 101,HST,101,20th Cent. Hist./Leb. & Region,3
+HST 231,HST,231,From Imarah to 1975-1990 War,3
+HST 240,HST,240,History of the Arab Peoples,3
+HST 242,HST,242,Europe & the M-E ,3
+HST 305,HST,305,Contemporary Europe 1945-1989,3
+HST 231H,HST,231H,From Imarah to 1975-1990 War,3
+HST 242H,HST,242H,Europe & the M-E ,3
+IAA 375,IAA,375,Intro.to Islamic Art,3
+IAA 376,IAA,376,Intro.to Islm Archi,3
+IAA 745,IAA,745,Calligraphy in Islam.Art&Arch.,3
+IAA 747,IAA,747,Figural represent.in Islam.Art,3
+IBS 311,IBS,311,Manag. Multinat'l Corporation,3
+IEP 3,IEP,3,Intensive English Program,0
+IGS 718,IGS,718,Gender in Discourse,3
+IGS 744P,IGS,744P,Tp:Gender in the Arab Gulf,3
+IGS 744U,IGS,744U,Tp:MEPI TLG Field work,3
+IGS 744Z,IGS,744Z,Topics in Gender Studies: Gender in Literature,3
+INA 811,INA,811,Theories in Internat. Affairs,3
+INA 813I,INA,813I,Top: Politics of Lebanon,3
+INA 813T,INA,813T,Tp.Int.Rel:MEPI TLG Field Work,3
+INA 813Z,INA,813Z,Tp:Democracy & World Politics,3
+INAR 331,INAR,331,Design Studio III,5
+INAR 351,INAR,351,Digital Drawing,3
+INAR 373,INAR,373,Formal Principles,3
+INAR 421,INAR,421,Design Technology,3
+INAR 431,INAR,431,Design Studio V,5
+INAR 441,INAR,441,Lighting Design,3
+INAR 531,INAR,531,Design Studio VII,6
+INAR 582,INAR,582,Professional Practice,2
+INAR 541A,INAR,541A,Furniture Design,3
+INAR 541B,INAR,541B,Furniture Design,3
+INAR 580E,INAR,580E,Topics: Public Art in Cities,3
+INAR 580I,INAR,580I,Topics: Urban Wooden Furniture Design & Construction,3
+INE 212 L,INE,212,Comp. Application in INE - Lab,0
+INE 212,INE,212,Computer Application in INE,2
+INE 307,INE,307,Deterministic OR Models,3
+INE 320,INE,320,Engineering Economy I,3
+INE 340,INE,340,Advanced Statistics,3
+INE 416,INE,416,Ergonomics,3
+INE 417,INE,417,Ergonomics Lab,1
+INE 428,INE,428,Project Management,3
+INE 442,INE,442,Quality Control I,3
+INE 446,INE,446,Production Systems II,3
+INE 450,INE,450,Simulation,3
+INE 451,INE,451,Simulation Lab,1
+INE 491,INE,491,Sem. on Contemp. Issues in INE,2
+INE 506,INE,506,Decision Analysis,3
+INE 521,INE,521,Engineering Economy II,3
+INE 542,INE,542,Supply Chain Management,3
+INE 593,INE,593,Capstone Engineering Design,1
+INE 320H,INE,320H,Engineering Economy,3
+INE 599I,INE,599I,Top.INE:Ind.Eng.App.in Ser.Ind,3
+INE 599L,INE,599L,Tp: Adv. Manufacturing and AI,3
+INE 599R,INE,599R,Topics: Queuing Theory & Application,3
+INE 599S,INE,599S,Topics: Optimal Resource Allocation Methods in industrial Systems,3
+ITA 201,ITA,201,Beginning Italian,3
+ITM 201,ITM,201,Computer Programming,3
+ITM 211,ITM,211,Inform. Technology  Manag. I,3
+ITM 232,ITM,232,Enterprise Resource Planning,3
+ITM 301,ITM,301,Business Data Communication,3
+ITM 302,ITM,302,Data and Information Mgt.,3
+ITM 311,ITM,311,Inform. Technology Manag. II,3
+ITM 401,ITM,401,Inform. Security & Protection,3
+ITM 420,ITM,420,System Analysis and Design,3
+ITM 880L,ITM,880L,Tp:Forecast.Tech.& Data Mining,3
+JSC 220,JSC,220,News Writing&Reporting,3
+JSC 222,JSC,222,Digital Media Design,3
+JSC 224,JSC,224,Social Media,3
+JSC 226,JSC,226,Multimedia Journalism Basics,3
+JSC 312,JSC,312,Media & Society,3
+JSC 330,JSC,330,Arab and International Media,3
+JSC 332,JSC,332,Broadcast Journalism,3
+JSC 419,JSC,419,Media Law and Ethics,3
+JSC 451,JSC,451,Media Research Methods,3
+JSC 488K,JSC,488K,Topics: Media and Palestine,3
+LAS 201,LAS,201,Water Security,3
+LAS 202,LAS,202,Sustainable Food Systems,3
+LAS 203,LAS,203,Sustainable Energy,3
+LAS 205,LAS,205,Digital Cultures,3
+LAS 206,LAS,206,Minds & Machines,3
+LAS 207,LAS,207,Introduction to Migration Studies,3
+LAS 208,LAS,208,Wellbeing Matters,3
+LAS 209,LAS,209,Doing Gender: Contextual Approaches,3
+LAS 210,LAS,210,Poverty and Human Development,3
+LAS 301,LAS,301,Debating Sustainability,3
+LAS 302,LAS,302,Inquiry for Innovation,3
+LAS 601,LAS,601,Writing in the Disciplines,0
+LAS 202H,LAS,202H,Sustainable Food Systems,3
+LAS 204M,LAS,204M,Ethics in Biomed.Res.& Pract.,3
+LAS 209H,LAS,209H,Doing Gender: Contextual Approaches,3
+LAS 301H,LAS,301H,Debating Sustainability,3
+LEG 201,LEG,201,Introd. to Legal Studies,3
+LLM 823,LLM,823,Accounting&Finance for Lawyers,3
+LLM 831,LLM,831,Legal Research and Writing,3
+LLM 876,LLM,876,Alternative Dispute Resolut.,3
+LLM 880Z,LLM,880Z,Topics: The Insurance Contract,3
+MCE 410,MCE,410,Mechatronics System Design I,3
+MEE 211,MEE,211,Engineering Graphics,1
+MEE 212 L,MEE,212,Computer Applic. in MEE - Lab,0
+MEE 212,MEE,212,Computer Applications in MEE,2
+MEE 241,MEE,241,Dynamics,3
+MEE 301,MEE,301,Engineering Thermodynamics,3
+MEE 311,MEE,311,Fluid Mechanics,3
+MEE 312,MEE,312,Fluid Mechanics Lab,1
+MEE 320,MEE,320,Strength of Materials,3
+MEE 321,MEE,321,Material Properties & Proc.,3
+MEE 351,MEE,351,Computer Aided Design,3
+MEE 351 L,MEE,351,Computer Aided Design - Lab,0
+MEE 392,MEE,392,Machine Shop,1
+MEE 401,MEE,401,Energy Systems,2
+MEE 414,MEE,414,Thermal Systems Design,3
+MEE 422,MEE,422,Mechanical Eng'g Design,3
+MEE 442,MEE,442,Mechanical Vibrations,3
+MEE 443,MEE,443,Mechanical Vibrations Lab,1
+MEE 445,MEE,445,Control Systems,3
+MEE 446,MEE,446,Control Systems Lab,1
+MEE 491,MEE,491,Sem. in Contemp. Issues in MEE,2
+MEE 503,MEE,503,Power Plant Engineering,3
+MEE 505,MEE,505,Solar System Design,3
+MEE 514,MEE,514,Computational Fluid Dynamics,3
+MEE 515,MEE,515,Refrigeration & Air Condition.,3
+MEE 517,MEE,517,Turbo Machinery,3
+MEE 532,MEE,532,Advanced Manufacturing and AI,3
+MEE 549,MEE,549,Automotive Dynamics,3
+MEE 560,MEE,560,Mechatronics System Design I,3
+MEE 593,MEE,593,Capstone Engineering Design,1
+MGT 201,MGT,201,Introduction to Management,3
+MGT 236,MGT,236,Communication Skills,1
+MGT 301,MGT,301,Organizational Behavior,3
+MGT 336,MGT,336,Developing a Business Plan,1
+MGT 338,MGT,338,Negotiation Skills,1
+MGT 401,MGT,401,Project Management,3
+MGT 411,MGT,411,Innovation & Entrepreneurship,3
+MGT 420,MGT,420,Strat. Plan.& Pol. Formulation,3
+MGT 436,MGT,436,Personality & Career Dev.,1
+MGT 438,MGT,438,Leadership Skills,1
+MGT 441,MGT,441,Human Resources Management,3
+MGT 831,MGT,831,Management Theory,3
+MGT 839,MGT,839,Advanced Organization Behavior,3
+MGT 875,MGT,875,Strategic Management,3
+MGT 420H,MGT,420H,Strat. Plan.& Pol. Formulation,3
+MGT 450P,MGT,450P,Topics: The Path to Consulting,3
+MGT 880S,MGT,880S,Sp.TopMGT:Launching a Business,3
+MIG 760,MIG,760,Citizen.Transnation.&Diaspora,3
+MIG 740B,MIG,740B,Topics: International Migration and Refugee Law,3
+MIG 780J,MIG,780J,Tp: MEPI TLG Field work,3
+MKT 201,MKT,201,Introduction to Marketing,3
+MKT 304,MKT,304,Consumer Behavior,3
+MKT 305,MKT,305,Services Marketing,3
+MKT 310,MKT,310,Retailing and Merchandizing,3
+MKT 311,MKT,311,International Marketing,3
+MKT 312,MKT,312,E-Marketing,3
+MKT 325,MKT,325,Fashion Marketing,3
+MKT 327,MKT,327,Marketing Analytics,3
+MKT 329,MKT,329,Neuro Marketing,3
+MKT 337,MKT,337,Brand Management,3
+MKT 421,MKT,421,Marketing Research,3
+MKT 498,MKT,498,Marketing Strategy,3
+MKT 841,MKT,841,Marketing Management,3
+MKT 843,MKT,843,Strategic Social Media Management in the Digital Age,3
+MKT 845,MKT,845,Digital Marketing,3
+MKT 488V,MKT,488V,Tp: Customer Experience Design,3
+MKT 488W,MKT,488W,Tp:Social Media Marketing,3
+MTH 101,MTH,101,Calculus I,3
+MTH 102,MTH,102,Calculus II,3
+MTH 201,MTH,201,Calculus III,3
+MTH 206,MTH,206,Calculus IV,3
+MTH 207,MTH,207,Discrete Structures I,3
+MTH 301,MTH,301,Linear Algebra,3
+MTH 303,MTH,303,Numerical Methods,3
+MTH 304,MTH,304,Differential Equations,3
+MTH 305,MTH,305,Probability and Statistics,3
+MTH 307,MTH,307,Discrete Structure II,3
+MTH 311,MTH,311,Abstract Algebra,3
+MTH 312,MTH,312,Applied Linear Algebra,3
+MTH 400,MTH,400,Advanced Linear Algebra,3
+MTH 401,MTH,401,Real Analysis I,3
+MTH 409,MTH,409,Introduction to Topology,3
+NUR 310,NUR,310,Pathophysiology for Nurs.Pract,4
+NUR 312,NUR,312,Pharmacology for Nurs Prac,3
+NUR 320,NUR,320,Health & Illness Concepts I,4
+NUR 340,NUR,340,Core Nursing Practicum I,3
+NUR 410,NUR,410,Professional Nurs. Concepts II,3
+NUR 420,NUR,420,Health & Illness Concept III,4
+NUR 441,NUR,441,Mental Health Clini. Intensive,0
+NUR 443,NUR,443,Prom.Hth Life Styl.Clin.Inten.,3
+NUR 444,NUR,444,High Acuity Nur. Clin. Intens.,3
+NUT 201,NUT,201,Fundamental of Human Nutrition,3
+NUT 301,NUT,301,Community Nutrition,3
+NUT 312,NUT,312,Food Chemistry,3
+NUT 313,NUT,313,Food Analysis Lab,1
+NUT 356,NUT,356,Nutrition Status Assessment,2
+NUT 367,NUT,367,Food Processing,2
+NUT 368,NUT,368,Food Processing Lab,1
+NUT 401,NUT,401,Advanced Human Nutrition,3
+NUT 422,NUT,422,Medical Nutrition Therapy I,3
+NUT 423,NUT,423,Medical Nutrition Therapy I Lab,1
+NUT 601,NUT,601,Advanced Biostatistics,3
+NUT 602,NUT,602,Res. Meth. for Nutr & Food Sc.,2
+NUT 651,NUT,651,Advanc. Nutrient Metabolism I,3
+NUT 681A,NUT,681A,Sp.Top in Nut.& Food Science 2,3
+OPM 301,OPM,301,Operations and Production Mgt.,3
+PED 211,PED,211,Beginning Swimming ,1
+PED 218,PED,218,Table Tennis,1
+PED 220,PED,220,Beginning Tennis,1
+PED 231,PED,231,Modern Dance,1
+PED 251,PED,251,Basketball,1
+PED 261,PED,261,Volleyball,1
+PED 281,PED,281,Futsal ,1
+PED 291,PED,291,Physical Fitness,1
+PFA 211,PFA,211,Survey of Western Music,3
+PFA 212,PFA,212,Survey of Middle Eastern Music,3
+PFA 214,PFA,214,Oriental Music Appreciation,3
+PFA 222,PFA,222,Art of Dance,3
+PFA 241,PFA,241,Introduction to Acting,3
+PFA 242,PFA,242,Art of Theater,3
+PFA 314,PFA,314,World Music History,3
+PFA 321,PFA,321,Movement Improvisation,3
+PFA 418,PFA,418,Performing Arts Productions,3
+PFA 316B,PFA,316B,DRpPrf: Dancing the Space,3
+PHA 204,PHA,204,Computer Applicat. to Pharmacy,2
+PHA 209,PHA,209,Principles of Pathophy.& Immun,4
+PHA 211,PHA,211,Microbiolog. Basis of Disease,3
+PHA 308,PHA,308,Pharm. Analysis & Biotech.,2
+PHA 309,PHA,309,Pharm. Analysis & Biotech. Lab,1
+PHA 312,PHA,312,Medicinal Chemistry I,3
+PHA 314,PHA,314,Dosage Forms I,3
+PHA 315,PHA,315,Dosage Forms I Lab,1
+PHA 320,PHA,320,Physical Assessment,2
+PHA 322,PHA,322,Professional Communication,1
+PHA 333,PHA,333,Pharmacy Management,3
+PHA 421,PHA,421,Drug info. & Lit. evaluation,2
+PHA 422,PHA,422,Pharmacokinetics & Biopharm.,4
+PHA 430,PHA,430,PharmacologyII,4
+PHA 441,PHA,441,Pharmacotherapeutics II,3
+PHA 442,PHA,442,Pharmacotherapeutics III,3
+PHA 514,PHA,514,Pharmacoepidemiology,2
+PHA 523,PHA,523,Clinical Pharmcokinetics,1
+PHA 550,PHA,550,Introd. to Pharmacogenomics,1
+PHA 560,PHA,560,Clinical Nutrit. & Diet therap,2
+PHA 570,PHA,570,Pro. Prac. Hosp/Drug Inf. Exp.,6
+PHA 571,PHA,571,Prof. Pract.-Community Exper.,6
+PHA 572,PHA,572,Prof.Ph.Pract. In-patient exp.,12
+PHA 755,PHA,755,Management Theory,3
+PHA 756,PHA,756,Instrumental Meth. Pharm Anal.,3
+PHA 760,PHA,760,Biostatistics in Pharma.,3
+PHA 567B,PHA,567B,Sp.Top.Ph.:Public Health,1
+PHA 567G,PHA,567G,Sp.Top.Ph:Career Opportunities,1
+PHA 567K,PHA,567K,Sp.Tp.Ph:Biostat.App.to Inform,1
+PHA 567M,PHA,567M,SpTp:Intro to Enterpreneurship,1
+PHA 567R,PHA,567R,Topics: Culture Competency for Healthcare Professionals,1
+PHL 101,PHL,101,Introduction to Philosophy,3
+PHL 306,PHL,306,Existentialism,3
+PHL 311,PHL,311,Philosophy of Religion,3
+PHL 322,PHL,322,Philosophy in Literature& Film,3
+PHO 201,PHO,201,Introduction to Photography,3
+PHO 231,PHO,231,History &Theory of Photography,3
+PHO 301,PHO,301,Studio Photography,3
+PHO 344,PHO,344,Fashion Photography,3
+PHY 111,PHY,111,Mechanics,4
+PHY 111 L,PHY,111,Mechanics Lab,0
+PHY 201,PHY,201,Electricity & Magnetism,3
+PHY 301,PHY,301,Classical Physics for Life Sc.,3
+PHY 302,PHY,302,Classical Physics for L/Sc Lab,1
+PHY 305,PHY,305,Modern Phys. for Life Science,3
+PHY 306,PHY,306,Modern Phys. Life Sciences Lab,1
+PHY 201B,PHY,201B,Electricity and Magnetism Lab,1
+POL 201,POL,201,Introd. to Political Science,3
+POL 203,POL,203,Gov. and Pol. of Lebanon,3
+POL 222,POL,222,Comparative Political Systems,3
+POL 230,POL,230,Citizenship,1
+POL 237,POL,237,Basics of Leadership,1
+POL 242,POL,242,Introduction to International Relations,3
+POL 252,POL,252,Fund. of Conflict Resolution,3
+POL 319,POL,319,Research Methodology II,3
+POL 323,POL,323,M.E. Governments & Politics,3
+POL 327,POL,327,Fund. of Security Studies,3
+POL 422,POL,422,The M.E. in World Affairs,3
+POL 231H,POL,231H,Introduction to Human Rights,3
+POL 434A,POL,434A,Topics: International Mediation and Peacemaking in Civil Wars,3
+POL 435HA,POL,435HA,Topics: Democracy & World Politics,3
+POL 437HF,POL,437HF,Topics: Democracy & World Politics,3
+POL 437Q,POL,437Q,Topics: International Mediation and Peacemaking in Civil Wars,3
+PSY 101,PSY,101,Psychology for All,3
+PSY 201,PSY,201,Introd. to Psychology,3
+PSY 202,PSY,202,Child Psychology,3
+PSY 234,PSY,234,Development across Life Span,3
+PSY 302,PSY,302,Health Psychology,3
+PSY 303,PSY,303,Introduction to Neuroscience,3
+PSY 311,PSY,311,Exceptional Child,3
+PSY 320,PSY,320,Theories of Personality,3
+PSY 322,PSY,322,Mind and Behavior,3
+PSY 323,PSY,323,Social Psychology,3
+PSY 324,PSY,324,Theories of Learning,3
+PSY 326,PSY,326,Psychological Assessment,3
+PSY 361,PSY,361,Research Methods,3
+PSY 425,PSY,425,Abnormal Psychology,3
+PSY 466,PSY,466,Counseling Psychology,3
+PSY 303H,PSY,303H,Introduction to Neuroscience,3
+PSY 498C,PSY,498C,Top. PSY:Positive Psychology,3
+PSY 498P,PSY,498P,Topics: Psychology of Attachment,3
+PSY 498S,PSY,498S,Topics: Psychology in Schools,3
+PSY 498T,PSY,498T,Topics: Psycho-oncology,3
+PTE 200,PTE,200,Intro. to Petroleum Eng.,3
+PTE 320,PTE,320,Reservoir Petrophysics,3
+PTE 321,PTE,321,Petroleum Engineering - LAB,1
+PTE 431,PTE,431,Fund.of Well Test Analysis,3
+PTE 432,PTE,432,Well Logging&Formation Eval.,3
+PTE 441,PTE,441,Pet.Leasing Regulations&Pract.,3
+PTE 450,PTE,450,Intro.to Process Engineering,3
+PTE 470,PTE,470,Pet. Engineering Design,3
+PTE 543,PTE,543,Life Cycle & Risk Management,3
+PTE 546,PTE,546,Corrosion Engineering,3
+PTE 566,PTE,566,Unconventional Oil and Gas Exploration,3
+PTE 573,PTE,573,Detailing for Pet.Engineers,2
+PTE 600L,PTE,600L,Tp: Chemical Reactor Design,3
+QBA 201,QBA,201,Managerial Statistics,3
+QBA 301,QBA,301,Intermediate Manag. Statistics,3
+QBA 851,QBA,851,Quant. Methods in Business,3
+RUS 201,RUS,201,Beginning Russian,3
+SOC 101,SOC,101,Sociology and Society,3
+SOC 201,SOC,201,Introduction to Sociology,3
+SOC 215,SOC,215,Introduction to Gender Studies,3
+SOC 488D,SOC,488D,Topics in Sociology: Fundamentals of Gender Discrimination,3
+SPA 201,SPA,201,Beginning Spanish,3
+STA 102,STA,102,Basic Mathematical Statistics,3
+STA 205,STA,205,Biostatistics,3
+STA 302,STA,302,Intro to Stat. in the Soc. Sc.,3
+TRA 326,TRA,326,Trans. of UN & Intern. Conf.,3
+TRA 328,TRA,328,Translation of Audiovisuals,3
+TRA 460,TRA,460,Adv. Trans. of Bus.& Eco.Texts,3
+TRA 484,TRA,484,Trans.of UN & Intern.Conf.Text,3
+TRA 499,TRA,499,Capstone Project,3
+TVF 221,TVF,221,Art of Film,3
+TVF 222,TVF,222,Introd. to Audio Visual Media,3
+TVF 328,TVF,328,Filmmaking Principles,3
+TVF 488U,TVF,488U,Tp: Short Film Writing,3
+WOS 313,WOS,313,Women in Arab World: Soc. Per.,3
+WRK 101,WRK,101,Skills for the Future,0
+WRK 102,WRK,102,Your Inquisitive Mind,0
+WRK 103,WRK,103,Sneak Peek @ LAU & Beyond,0
+WRK 202H,WRK,202H,Life Balance,0
+WRK 209H,WRK,209H,Ace your Interview,0
+WRK 232H,WRK,232H,Navigating Disruptive Tech: The Role of Human Leadership,0
+WRK 233H,WRK,233H,Falling Forward,0
+WRK 234H,WRK,234H,Time Management and Productivity Mastery,0

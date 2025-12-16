@@ -1,0 +1,77 @@
+<%- include("partials/header.ejs")%>
+
+<% if (locals.error) { %>
+  <div class="confirm-container">
+    <h2 class="page-instruction "><%= error %></h2>
+  </div>
+  <div class="action-buttons">
+<% } else {%>
+  <div class="confirm-container">
+    <h2 class="page-instruction">Review your selected courses and choose your preferred campus for each.</h2>
+    <%if(locals.message){%>
+      <p style="color:red; text-align: center;"><%= message%></p>
+    <%}%>
+    <form action="/findSched" method="post">
+    <ul class="article-display">
+      <% for (let i = 0; i < selected_courses.length; i++) { %>
+        <li class="repertory-item">
+          <div class="repertory-container repertory-shadow">
+            <div class="course-info">
+              <span class="article-title"><%= names[i] %></span>
+            </div>
+            <div class="button-group">
+              <div class="campus-options">
+                <% if (campus[i].campuses.includes(0)) { %>
+                  <label class="campus-label byblos">
+                    No campuses were found.
+                  </label>
+                <% } %>
+                <% if (campus[i].campuses.includes(1)) { %>
+                    <label class="campus-label beirut">
+                      <input type="checkbox" name="campus_<%= i %>[]" value="1">
+                      Beirut
+                    </label>
+                <% } %>
+                <% if (campus[i].campuses.includes(2)) { %>
+                    <label class="campus-label byblos">
+                      <input type="checkbox" name="campus_<%= i %>[]" value="2">
+                      Byblos
+                    </label>
+                <% } %>
+              </div>
+              <button type="button" onclick="deleteCourse(<%= i %>)" class="delete-btn delete">Delete</button>
+            </div>
+           </div> 
+        </li>
+      <% } %>
+    </ul>
+    
+    <div class="action-buttons">
+      <button class="post campus-label beirut" type="button" data-campus="1" onclick="toggleCampusSelect(this)">All Beirut</button>
+      <button class="post campus-label byblos" type="button" data-campus="2" onclick="toggleCampusSelect(this)">All Byblos</button>
+      <input class="post find-btn" type="submit" name="SUB_BTN" value="Find Schedule" <%= locals.error ? "disabled" : "" %>>
+    </form>
+<% }%>
+
+
+
+  <form action="/course" method="GET">
+    <input type="hidden" name="path" value="1">
+    <input class="post back-btn-confirm" type="submit" name="SUB_BTN" value="Back">
+  </form>
+    </div>
+</div>
+
+<script>
+  function deleteCourse(index) {
+    window.location.href = `/delete?value=${index}`;
+  }
+
+  function toggleCampusSelect(button){
+    const campusValue = button.dataset.campus;
+    const checkboxes = document.querySelectorAll(`input[type="checkbox"][value="${campusValue}"]`);
+    const isActive = button.classList.toggle("active");
+    checkboxes.forEach(cb => cb.checked = isActive);
+  }
+</script>
+<%- include("partials/footer.ejs")%>

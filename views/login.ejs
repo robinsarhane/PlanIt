@@ -1,0 +1,56 @@
+<%- include("partials/header.ejs")%>
+
+<%if(locals.message){%>
+    <h2><%=message%></h2>
+<%}%>
+
+<div class="welcome-page">
+    <img src="/Images/library.png" class="welcomeImg" />
+  </div>
+
+<div class="signupdiv">
+<div class="wrapper">
+    <form action="/login" method="post">
+      <h1>Log In</h1>
+
+      <div class="input-box">
+        <input type="text" placeholder="Email" name="email" required>
+        <i class='bx bxs-user'></i>
+      </div>
+
+      <div class="input-box">
+        <input type="password" placeholder="Password" name="password" id="password" required>
+        <i class='bx bx-show' id="togglePassword"></i>
+      </div>
+
+      <div class="remember-forgot">
+        <label><input type="checkbox">Remember Me</label>
+        <a href="#">Forgot Password?</a>
+      </div>
+
+      <%if(locals.error){%>
+        <p style="color:red"><%- error%></p>
+      <%}%>
+
+      <button type="submit" class="btn">Log In</button>
+      <div class="register-link">
+        <p>Dont have an account? <a href="/signup">Sign Up</a></p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+    const togglePassword = document.getElementById('togglePassword');
+    const password = document.getElementById('password');
+  
+    togglePassword.addEventListener('click', function () {
+      // Toggle the input type between password and text
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
+  
+      // Toggle the icon between show and hide
+      this.classList.toggle('bx-show');
+      this.classList.toggle('bx-hide');
+    });
+  </script>

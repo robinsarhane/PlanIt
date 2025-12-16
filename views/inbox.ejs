@@ -1,0 +1,41 @@
+<%- include("partials/header.ejs")%>
+
+<%if(locals.message){%>
+    <h2 class="page-instruction" style="margin-top: 5rem;"><%=message%></h2>
+<%} else {%>
+    <div class="big-history">
+        <h2 class="page-instruction">Inbox</h2>
+        
+        <ul class="history-display">
+            <% for(var i = 0; i < inbox.length; i++) {%>
+                <li class="history-item">
+                    <div class="history-container">
+                        <span class="history-title"><%= inbox[i].name%></span>
+                        <%if(!inbox[i].read){%>
+                            <span>Mark as Read</span>
+                        <%} else { %>
+                            <span>Mark as Unread</span>
+                        <%} %>
+                        <label class="history-buttons campus-label">
+                            <form action="/markasread" method="post">
+                                
+                                <input type="hidden" name="name" value="<%= inbox[i].message_id%>">
+                                <input type="checkbox"
+                                    name="read"
+                                    value="true"
+                                    <% if (inbox[i].read) { %> 
+                                        checked 
+                                    <% } %>
+                                    onclick="this.form.submit()"
+                                >
+                            </form>
+                        </label>
+                    </div>
+                    <span><%= inbox[i].message%></span>
+                </li>
+            <% }%>  
+        </ul>
+        </div>
+<%}%>
+
+<%- include("partials/footer.ejs")%>

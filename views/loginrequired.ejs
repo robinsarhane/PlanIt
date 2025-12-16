@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs")%>
+
+<%if(locals.message){%>
+    <h2><%=message%></h2>
+<%}%>
+
+<form action="/loginrequired">
+<div class="welcome-page">
+    <img src="/Images/library.png" class="welcomeImg" />
+</div>
+
+<div class="signupdiv">
+    <div class="wrapperreq">
+      <div class="required-header">
+        <div class="icon">&#9888;</div>
+      </div>
+      <h2>Log In Required</h2>
+      <p>Please log in to reach out with your questions and make the most of our features.</p>
+      <div class="login-buttons">
+        <a href="/login" class="btn-required loginreq">Log In</a>
+        <a href="javascript:history.back()" class="btn-required backreq">Back</a>
+      </div>
+    </div>
+  </div>
+
+</form>

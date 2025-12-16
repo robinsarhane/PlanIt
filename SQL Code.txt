@@ -1,0 +1,50 @@
+WITH student_sections AS (
+    SELECT * 
+    FROM Sections 
+    WHERE course_id IN (SELECT course_id FROM Student_Course_Selections WHERE student_id = 101)
+),
+generate_schedules AS (
+    SELECT 
+        s1.crn AS section1,
+        s2.crn AS section2,
+        s3.crn AS section3,
+        s4.crn AS section4,
+        s5.crn AS section5,
+        s6.crn AS section6    
+FROM student_sections s1
+    JOIN student_sections s2 
+        ON s1.course_id < s2.course_id 
+        AND check_overlap(s1.crn, s2.crn)
+    JOIN student_sections s3 
+        ON s2.course_id < s3.course_id 
+        AND check_overlap(s1.crn, s3.crn)
+		AND check_overlap(s2.crn, s3.crn)
+    JOIN student_sections s4 
+        ON s3.course_id < s4.course_id 
+        AND check_overlap(s1.crn, s4.crn)
+		AND check_overlap(s2.crn, s4.crn)
+		AND check_overlap(s3.crn, s4.crn)
+    JOIN student_sections s5 
+        ON s4.course_id < s5.course_id 
+        AND check_overlap(s1.crn, s5.crn)
+		AND check_overlap(s2.crn, s5.crn)
+		AND check_overlap(s3.crn, s5.crn)
+		AND check_overlap(s4.crn, s5.crn)
+	JOIN student_sections s6 
+        ON s5.course_id < s6.course_id 
+        AND check_overlap(s1.crn, s6.crn)
+		AND check_overlap(s2.crn, s6.crn)
+		AND check_overlap(s3.crn, s6.crn)
+		AND check_overlap(s4.crn, s6.crn)
+		AND check_overlap(s5.crn, s6.crn)
+    JOIN Student_Profile sp 
+        ON sp.student_id = 101 
+        AND s1.campus = sp.campus 
+        AND s2.campus = sp.campus 
+        AND s3.campus = sp.campus 
+        AND s4.campus = sp.campus 
+        AND s5.campus = sp.campus
+		AND s6.campus = sp.campus
+)
+SELECT section1, section2, section3, section4, section5, section6
+FROM generate_schedules;

@@ -1,0 +1,71 @@
+<%- include("partials/header.ejs")%>
+
+<div class="subjects-wrapper">
+  <div class="subjects-container">
+    <h1>Select Your Courses</h1>
+
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search courses..." oninput="filterCourses()">
+        <div class="search-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+      </div>
+
+    <form action="/course" method="GET">
+        <div class="course-list" id="courseList">
+          <% for (let i = 0; i < courses.length; i++) { %>
+            <div class="course-item" data-value="<%= courses[i].course_id%>" onclick="selectCourse(this)">
+              <%= courses[i].subject + " " + courses[i].course_number + " - " + courses[i].course_name + " " + courses[i].credits + " credits" %>
+            </div>
+          <% } %>
+        </div>
+    
+        <input type="hidden" name="sel_courses" id="sel_subj">
+        <input type="hidden" name="path" value="1">
+      
+        <%if(locals.message){%>
+          <p style="color:red"><%= message%></p>
+        <%}%>
+
+      <div class="button-container">
+        <input type="submit" name="SUB_BTN" value="Add" id="submitBtn" disabled class="styled-btn">
+        <input type="submit" name="SUB_BTN" value="Back" class="styled-btn back-btn">
+      </div>
+    </form>
+
+    <form action="/confirm" method="post" style="text-align: center">
+      <input type="submit" name="SUB_BTN" value="View Selection" class="styled-btn done-btn">
+    </form>
+  </div>
+</div>
+
+<script>
+    function selectCourse(elem) {
+        const wasSelected = elem.classList.contains('selected');
+        document.querySelectorAll('.course-item.selected').forEach(el => el.classList.remove('selected'));
+        const submitBtn = document.getElementById('submitBtn');
+        if (!wasSelected) {
+            elem.classList.add('selected');
+            document.getElementById('sel_subj').value = elem.dataset.value;
+            submitBtn.classList.add('enabled');
+            submitBtn.disabled = false;
+        } else {
+            document.getElementById('sel_subj').value = "";
+            submitBtn.classList.remove('enabled');
+            submitBtn.disabled = true;
+        }
+    }
+
+    function filterCourses() {
+    const input = document.getElementById('searchBar').value.toLowerCase();
+    const courses = document.querySelectorAll('.course-item');
+    courses.forEach(course => {
+      const text = course.textContent.toLowerCase();
+      course.style.display = text.includes(input) ? 'block' : 'none';
+    });
+  }
+</script>
+<%- include("partials/footer.ejs") %>

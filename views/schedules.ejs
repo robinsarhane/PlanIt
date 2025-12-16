@@ -1,0 +1,39 @@
+<%- include("partials/header.ejs")%>
+
+<%if(schedules.length === 0){%>
+  <h1>No Schedules Were Generated. Please Select Another Combination of Courses</h1>
+
+  <form action="/confirm" method="post" style="text-align: center">
+    <input type="submit" name="SUB_BTN" value="View Selection" class="styled-btn done-btn">
+  </form>
+<%} else {%>
+
+<div class="select-container">
+  <h1 class="select-title">Select Your Schedules.</h1>
+
+  <%if(locals.error){%>
+    <p style="color:red"><%= error%></p>
+  <%}%>
+
+  <ul class="schedules-display">
+    <% for (var i = 0; i < schedules.length; i++) { %>
+      <li class="schedules-item">
+        <div class="schedules-card">
+          <span class="schedules-title">Option <%= i+1 %></span>
+          <div>
+            <p style="margin: 0; gap: 0;">Earliest: <%= duration[i].min%> | Latest: <%= duration[i].max%></p>
+          </div>
+          
+          <form action="/save" method="post" class="schedules-form">
+            <input type="text" name="name" placeholder="Schedule Name" class="schedules-input" required>
+            <input type="hidden" name="value" value="<%= i %>">
+            <input type="submit" value="Save" class="schedules-button">
+            
+          </form>
+        </div>
+      </li>
+    <% } %>
+  </ul>
+</div>
+<% } %>
+<%- include("partials/footer.ejs")%>

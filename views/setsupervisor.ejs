@@ -1,0 +1,90 @@
+<%- include("partials/header.ejs")%>
+
+<div class="subjects-wrapper">
+  <div class="subjects-container">
+    <h1>Select the user</h1>
+
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search user..." oninput="filterCourses()">
+        <div class="search-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+      </div>
+      
+
+    <form action="/viewsupervisors" method="get" onsubmit="return submitSelected()">
+      <div class="course-list" id="courseList">
+        <% for (var i = 0; i < users.length; i++) { %>
+          <div class="course-item" data-value="<%= users[i].student_id %>" onclick="toggleSelect(this)">
+            <%= users[i].first_name + " " + users[i].last_name%>
+          </div>
+        <% } %>
+      </div>
+
+      <input type="hidden" name="selected_supervisor" id="selected_supervisor">
+      <input type="hidden" name="path" value="1">
+
+      <%if(locals.message){%>
+        <p style="color:red"><%= message%></p>
+      <%}%>
+
+      <div class="button-container">
+        <input type="submit" name="SUB_BTN" id="submitBtn" value="Make Supervisor" disabled class="styled-btn back-btn">
+      </div>    
+    </form>
+  </div>
+</div>
+
+<script>
+    document.querySelectorAll('.course-item').forEach(item => {
+      item.addEventListener('click', () => {
+        // Remove 'selected' from all other items
+        document.querySelectorAll('.course-item.selected').forEach(el => {
+          el.classList.remove('selected');
+        });
+
+        // Add 'selected' only to the clicked item
+        item.classList.add('selected');
+        document.getElementById('submitBtn').disabled = false;
+      });
+    });
+
+    function submitSelected() {
+      const selected = document.querySelector('.course-item.selected'); // only one selectable
+      if (selected) {
+        const form = document.querySelector('form');
+        const input = document.getElementById('selected_supervisor');
+        input.value = selected.dataset.value;
+        return true;
+      }
+      return false;
+    }
+
+  
+    function filterCourses() {
+      const input = document.getElementById('searchBar').value.toLowerCase();
+      const courses = document.querySelectorAll('.course-item');
+      courses.forEach(course => {
+        const text = course.textContent.toLowerCase();
+        course.style.display = text.includes(input) ? 'block' : 'none';
+      });
+    }
+
+    function toggleSelect(elem) {
+      elem.classList.toggle('selected');
+      const selected = [...document.querySelectorAll('.course-item.selected')]
+                  .map(el => el.dataset.value);
+
+      const submitBtn = document.getElementById('submitBtn');
+      submitBtn.disabled = selected.length === 0;
+      submitBtn.classList.toggle('enabled', selected.length > 0);
+
+      document.getElementById('selectedCount').textContent = `${selected.length} selected`;
+    } 
+</script>
+
+  
+<%- include("partials/footer.ejs") %>

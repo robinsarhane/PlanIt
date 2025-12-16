@@ -1,0 +1,79 @@
+<%- include("partials/header.ejs")%>
+
+<div class="features-wrapper">
+  <div class="features-container">
+    <h1>Create Your Own Schedule!</h1>  
+    <p>
+        Have the freedom to try around and save your own schedules.
+    </p>
+    <form action="/comingsoon" method="POST">
+        <input type="hidden" name="path" value="1">
+        <div class="button-container">
+          <input type="submit" name="SUB_BTN" id="featuresSubmitBtn" value="Coming Soon..." disabled>
+        </div>    
+    </form>
+  </div>
+
+  <div class="features-container">
+    <h1>Let Us Handle Everything.</h1> 
+    <p>
+        Allow us to generate all the possible schedules based on your selected courses.
+    </p>
+    <form action="/subjects" method="POST">
+        <input type="hidden" name="path" value="1">
+        <div class="button-container">
+          <input type="submit" name="SUB_BTN" id="featuresSubmitBtn" value="Get Started">
+        </div>    
+    </form>     
+  </div>
+</div>
+
+  <%if(supervisor){%>
+    <div class="features-wrapper">
+      <div class="sup-features-container">
+        <h2>Update Database</h1> 
+        <form action="/update" method="POST">
+            <input type="hidden" name="path" value="1">
+            <div class="sup-button-container">
+              <input type="submit" name="SUB_BTN" id="featuresSubmitBtn" value="Update">
+            </div>    
+        </form>     
+      </div>
+
+      <div class="sup-features-container">
+        <h2>Change terms</h1> 
+        <%if(locals.message){%>
+          <p><%= message%></p>
+        <%}%>
+        <form action="/changeterms" method="POST">
+            <input type="hidden" name="path" value="1">
+            <div class="sup-button-container">
+              <input type="submit" name="SUB_BTN" id="featuresSubmitBtn" value="Change">
+            </div>    
+        </form>     
+      </div>
+
+      <div class="sup-features-container">
+        <h2>View Supervisors List</h1> 
+        <form action="/viewsupervisors" method="get">
+            <input type="hidden" name="path" value="1">
+            <div class="sup-button-container">
+              <input type="submit" name="SUB_BTN" id="featuresSubmitBtn" value="View">
+            </div>    
+        </form>     
+      </div>
+
+      <div class="sup-features-container">
+        <h2>Inbox</h1> 
+        <form action="/inbox" method="get">
+            <input type="hidden" name="path" value="1">
+            <div class="sup-button-container">
+              <input type="submit" name="SUB_BTN" id="featuresSubmitBtn" value="Read">
+            </div>    
+        </form>     
+      </div>
+    </div>
+  <%}%>
+
+  
+<%- include("partials/footer.ejs") %>

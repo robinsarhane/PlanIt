@@ -1,0 +1,95 @@
+<%- include("partials/header.ejs")%>
+
+<%if(locals.message){%>
+    <h2><%=message%></h2>
+<%}%>
+
+<div class="welcome-page">
+    <img src="/Images/library.png" class="welcomeImg" />
+  </div>
+
+<div class="signupdiv">
+<div class="wrapper">
+    <form action="/signup" id="signupForm" method="POST">
+      <h1>Sign Up</h1>
+      <div class="input-box">
+        <input type="text" placeholder="First Name" name="firstName" required>
+        <i class='bx bxs-user'></i>
+      </div>
+
+      <div class="input-box">
+        <input type="text" placeholder="Last Name" name="lastName" required>
+        <i class='bx bxs-user'></i>
+      </div>
+
+      <div class="input-box">
+        <input type="text" placeholder="Email" name="email" required>
+        <i class='bx bxs-user'></i>
+      </div>
+
+      <div class="input-box">
+        <input type="password" placeholder="Password" name="password" id="password" required>
+        <i class='bx bx-show' id="togglePassword"></i>
+      </div>
+
+      <div class="input-box">
+        <input type="password" placeholder="Confirm Password" name="passwordConfirmed" id="confirmPassword" required>
+        <i class='bx bx-show' id="toggleConfirmPassword"></i>
+      </div>
+      <%if(locals.error){%>
+        <p style="color:red"><%- error%></p>
+      <%}%>
+
+      <p id="errorMessage" style="color:red; display:none;"></p>
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+<script>
+    const togglePassword = document.getElementById('togglePassword');
+    const password = document.getElementById('password');
+    const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
+    const confirmPassword = document.getElementById('confirmPassword');
+    const form = document.getElementById('signupForm');
+    const emailInput = document.querySelector('input[name="email"]');
+  
+    togglePassword.addEventListener('click', function () {
+      // Toggle the input type between password and text
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
+  
+      // Toggle the icon between show and hide
+      this.classList.toggle('bx-show');
+      this.classList.toggle('bx-hide');
+    });
+  
+    toggleConfirmPassword.addEventListener('click', function () {
+      // Toggle the input type between password and text for confirm password
+      const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+      confirmPassword.setAttribute('type', type);
+  
+      // Toggle the icon between show and hide
+      this.classList.toggle('bx-show');
+      this.classList.toggle('bx-hide');
+    });
+  
+    form.addEventListener('submit', function (event) {
+      const errorMessage = document.getElementById('errorMessage');
+  
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!emailRegex.test(emailInput.value)) {
+        event.preventDefault();
+        errorMessage.textContent = "Please enter a valid email address.";
+        errorMessage.style.display = "block";
+      } else if (password.value !== confirmPassword.value) {
+        event.preventDefault();
+        errorMessage.textContent = "Passwords do not match.";
+        errorMessage.style.display = "block";
+      } else {
+        errorMessage.textContent = "";
+        errorMessage.style.display = "none";
+      }
+    });
+  </script>
